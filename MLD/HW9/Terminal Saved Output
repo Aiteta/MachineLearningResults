@@ -1,0 +1,247 @@
+Last login: Tue Nov 24 12:16:04 on ttys000
+(base) alexandreaitettajer@Alexandres-MBP ~ % ssh aaitet@jumpgate.scorec.rpi.edu
+aaitet@jumpgate.scorec.rpi.edu's password: 
+Last login: Tue Nov 24 16:00:58 2020 from 74.70.69.90
+
+			** SCOREC SSH Gateway **
+**  Unauthorized use is prohibited, authorized users must adhere to the lab   **
+**  policies and procedures at all times.  Report usage violations to         **
+**  help@scorec.rpi.edu.						      **
+**									      **
+**  Online documentation can be found at http://www.scorec.rpi.edu/wiki       **
+**									      **
+**  For support, email help@scorec.rpi.edu from an email address ending in.   **
+**  rpi.edu.								      **
+**									      **
+**  Please note that jumpgate is reserved for use as an SSH gateway	      **
+**  and file transfer node. Any other processes may be terminated	      **
+**  automatically and without warning at any time.			      **
+
+
+
+			** SCOREC SSH Gateway **
+**  Unauthorized use is prohibited, authorized users must adhere to the lab   **
+**  policies and procedures at all times.  Report usage violations to         **
+**  help@scorec.rpi.edu.						      **
+**									      **
+**  Online documentation can be found at http://www.scorec.rpi.edu/wiki       **
+**									      **
+**  For support, email help@scorec.rpi.edu from an email address ending in.   **
+**  rpi.edu.								      **
+**									      **
+**  Please note that jumpgate is reserved for use as an SSH gateway	      **
+**  and file transfer node. Any other processes may be terminated	      **
+**  automatically and without warning at any time.			      **
+
+
+aaitet@jumpgate:~$ oh-examples/
+-bash: oh-examples/: Is a directory
+aaitet@jumpgate:~$ cd oh-examples/
+aaitet@jumpgate:~/oh-examples$ cd omegah_examples/
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     ghosting.cpp       meshes		 reduction.cpp
+classification.cpp  hypercube.cpp      new_mesh		 synchronization.cpp
+CMakeLists.txt	    interpolation.cpp  partitioning.cpp  tags.cpp
+dofs.cpp	    LICENSE	       README.md	 testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls -a
+.		    CMakeLists.txt  .git	       meshes		 reduction.cpp
+..		    dofs.cpp	    hypercube.cpp      new_mesh		 synchronization.cpp
+adjacencies.cpp     .dofs.cpp.swp   interpolation.cpp  partitioning.cpp  tags.cpp
+classification.cpp  ghosting.cpp    LICENSE	       README.md	 testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ rm .dofs.cpp.swp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ rm .dofs.cpp.swp
+rm: cannot remove '.dofs.cpp.swp': No such file or directory
+aaitet@jumpgate:~/oh-examples/omegah_examples$ rm dofs.cpp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     ghosting.cpp       LICENSE	 partitioning.cpp  synchronization.cpp
+classification.cpp  hypercube.cpp      meshes	 README.md	   tags.cpp
+CMakeLists.txt	    interpolation.cpp  new_mesh  reduction.cpp	   testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git reset HEAD
+Unstaged changes after reset:
+D	dofs.cpp
+M	partitioning.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     ghosting.cpp       LICENSE	 partitioning.cpp  synchronization.cpp
+classification.cpp  hypercube.cpp      meshes	 README.md	   tags.cpp
+CMakeLists.txt	    interpolation.cpp  new_mesh  reduction.cpp	   testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout    Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git commit
+On branch AAdofs
+Your branch is up to date with 'origin/AAdofs'.
+
+Changes not staged for commit:
+	deleted:    dofs.cpp
+	modified:   partitioning.cpp
+
+Untracked files:
+	.nfs00000000000059d6000000c3
+
+no changes added to commit
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git reset --hard HEAD
+HEAD is now at 9b54517 Adding new test dofs
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     dofs.cpp	   interpolation.cpp  new_mesh		reduction.cpp	     testing.cmake
+classification.cpp  ghosting.cpp   LICENSE	      partitioning.cpp	synchronization.cpp
+CMakeLists.txt	    hypercube.cpp  meshes	      README.md		tags.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ cim partitioning.cpp 
+-bash: cim: command not found
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim partitioning.cpp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim interpolation.cpp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+
+[1]+  Stopped                 vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ fg
+vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ fg
+-bash: fg: current: no such job
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     ghosting.cpp       meshes		 reduction.cpp
+classification.cpp  hypercube.cpp      new_mesh		 synchronization.cpp
+CMakeLists.txt	    interpolation.cpp  partitioning.cpp  tags.cpp
+dofs.cpp	    LICENSE	       README.md	 testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls -a
+.		    CMakeLists.txt  .git	       meshes		 reduction.cpp
+..		    dofs.cpp	    hypercube.cpp      new_mesh		 synchronization.cpp
+adjacencies.cpp     .dofs.cpp.swp   interpolation.cpp  partitioning.cpp  tags.cpp
+classification.cpp  ghosting.cpp    LICENSE	       README.md	 testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim .
+./             ../            .dofs.cpp.swp  .git/          
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim .dofs.cpp.swp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp.swp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ rm .dofs.cpp.swp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     ghosting.cpp       meshes		 reduction.cpp
+classification.cpp  hypercube.cpp      new_mesh		 synchronization.cpp
+CMakeLists.txt	    interpolation.cpp  partitioning.cpp  tags.cpp
+dofs.cpp	    LICENSE	       README.md	 testing.cmake
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls meshes/
+cube7k_4p.osh  cube7k.osh  cube7k.vtk  plate.smd  tri8_4p.osh  tri8.osh  tri8.vtk
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls meshes/tri8.osh/
+0.osh    nparts   version  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls meshes/tri8.osh/nparts 
+meshes/tri8.osh/nparts
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/nparts 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/ 
+0.osh    nparts   version  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/0.osh 
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/
+0.osh    nparts   version  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/version 
+adjacencies.cpp      .git/                new_mesh/            tags.cpp
+classification.cpp   hypercube.cpp        partitioning.cpp     testing.cmake
+CMakeLists.txt       interpolation.cpp    README.md            
+dofs.cpp             LICENSE              reduction.cpp        
+ghosting.cpp         meshes/              synchronization.cpp  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/nparts 
+adjacencies.cpp      .git/                new_mesh/            tags.cpp
+classification.cpp   hypercube.cpp        partitioning.cpp     testing.cmake
+CMakeLists.txt       interpolation.cpp    README.md            
+dofs.cpp             LICENSE              reduction.cpp        
+ghosting.cpp         meshes/              synchronization.cpp  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh/nparts 
+adjacencies.cpp      .git/                new_mesh/            tags.cpp
+classification.cpp   hypercube.cpp        partitioning.cpp     testing.cmake
+CMakeLists.txt       interpolation.cpp    README.md            
+dofs.cpp             LICENSE              reduction.cpp        
+ghosting.cpp         meshes/              synchronization.cpp  
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim meshes/tri8.osh
+aaitet@jumpgate:~/oh-examples/omegah_examples$ vim dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     interpolation.cpp  reduction.cpp
+classification.cpp  LICENSE	       synchronization.cpp
+CMakeLists.txt	    meshes	       tags.cpp
+dofs.cpp	    new_mesh	       testing.cmake
+ghosting.cpp	    partitioning.cpp
+hypercube.cpp	    README.md
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git commit dofs.cpp
+hint: Waiting for your editor to close the file... 
+[1]+  Stopped                 git commit dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ fg
+git commit dofs.cpp
+
+[1]+  Stopped                 git commit dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ^C
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ^C
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ^C
+aaitet@jumpgate:~/oh-examples/omegah_examples$ fg
+git commit dofs.cpp
+
+[1]+  Stopped                 git commit dofs.cpp
+aaitet@jumpgate:~/oh-examples/omegah_examples$ git add dofs.cpp 
+fatal: Unable to create '/users/aaitet/oh-examples/omegah_examples/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+aaitet@jumpgate:~/oh-examples/omegah_examples$ ls
+adjacencies.cpp     interpolation.cpp  reduction.cpp
+classification.cpp  LICENSE	       synchronization.cpp
+CMakeLists.txt	    meshes	       tags.cpp
+dofs.cpp	    new_mesh	       testing.cmake
+ghosting.cpp	    partitioning.cpp
+hypercube.cpp	    README.md
+aaitet@jumpgate:~/oh-examples/omegah_examples$ fg
+git commit dofs.cpp
+
+File Edit Options Buffers Tools Help                                     
+
+
+
+-UU-:**--F1  COMMIT_EDITMSG   98% L13    (Fundamental) ------------------
+ESC-
